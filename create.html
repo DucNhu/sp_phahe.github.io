@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="images/logo.png">
+    <title>Giaphaviet.com</title>
+    <!-- bs4 link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Link gg font -->
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/create.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container-fluid header__top">
+            <!-- icon -->
+            <img src="images/logo.png" alt="header logo" class="header__logo">
+            <!-- header__search -->
+            <div class="header__search-box">
+                <!-- select option -->
+                <select name="" id="">
+                    <option value="">Tìm tất cả</option>
+                    <option value="">10 năm trước</option>
+                    <option value="">20 năm trước</option>
+                    <option value="">hơn 20 năm trước</option>
+                    <option value="">Ông bà</option>
+                    <option value="">Cha mẹ</option>
+                </select>
+                <!-- input search -->
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+                <!-- icon search -->
+                <button class="header__icon-search">
+                    <img src="images/search.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="container-fluid header-body">
+            <img src="images/logo-menu-left.png" alt="">
+            <ul class="header__list-menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li>
+                    <a href="hotoc.html">Dòng tộc</a>
+                    <span class="sub-menu">
+                        <ul class="list__menu">
+                            <li class="sub-item" id="nguyen">
+                                <a href="">Họ Nguyễn</a>
+                                <ul class="sub-menu__child">
+                                    <li class="sub-menu__child-item"><a href="#">Nguyễn Linh Thộn</a></li>
+                                    <li class="sub-menu__child-item"><a href="#">Nguyễn Văn Tràng</a></li>
+                                    <li class="sub-menu__child-item"><a href="#">Nguyễn Thị Hồng</a></li>
+                                    <li class="sub-menu__child-item"><a href="#">nguyễn Nguyên</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-item"><a href="">Họ Trần</a></li>
+                            <li class="sub-item"><a href="">họ Phạm</a></li>
+                            <li class="sub-item"><a href="">Họ Nhữ</a></li>
+                            <li class="sub-item"><a href="">Họ Nguyên</a></li>
+                        </ul>
+                    </span>
+                </li>
+                <li><a href="#phaky">Phả ký</a></li>
+                <li><a href="#phaDo">Phả đồ</a></li>
+                <li>
+                    Đăng nhập
+
+                    <span class="sub-menu">
+                        <div class="login-create__box">
+                            <img src="images/member.png" alt="" />
+                            <input type="text" placeholder="Tên đăng nhập">
+                            <input type="password" placeholder="Mật khẩu" required>
+                            <a href="">Quên mật khẩu</a>
+                            <button>Đăng nhập</button>
+                            <a href="create.html">Đăng kí</a>
+                        </div>
+                    </span>
+                </li>
+            </ul>
+            <img src="images/logo-menu-right.png" alt="">
+        </div>
+
+    </header>
+    <!-- main -->
+    <main>
+        <div class="container">
+            <h1>Đăng ký</h1>
+            <form action="index.html">
+                <div>
+                    <label for="name-login">
+                        Tên đăng nhập
+                    </label>
+                    <input type="text" id="name-login" maxlength="30" required>
+                </div>
+                <div>
+                    <label for="password">
+                        Mật khẩu
+                    </label>
+                    <input type="password" id="password" required>
+                </div>
+                <div>
+                    <label for="password-again">
+                        Xác nhận mật khẩu
+                    </label>
+                    <input type="password" id="password-again" required>
+                </div>
+                <div>
+                    <label for="first-last__name">
+                        Họ tên
+                    </label>
+                    <input type="text" id="first-last__name" maxlength="30" required>
+                </div>
+                <div>
+                    <label for="sex">
+                        Giới tính :
+                    </label>
+                    <select name="" id="sex">
+                        <option value="">nam</option>
+                        <option value="">Nữ</option>
+                        <option value="" selected>Ẩn</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="birthday">
+                        Ngày sinh
+                    </label>
+                    <input type="date" id="birthday">
+                </div>
+                <div>
+                    <label for="Email">
+                        Email
+                    </label>
+                    <input type="text" id="Email" required>
+                </div>
+                <div>
+                    <label for="phone">
+                        Số điện thoại
+                    </label>
+                    <input type="number" id="phone" maxlength="10" required>
+                </div>
+                <div>
+                    <label for="address">
+                        Địa chỉ
+                    </label>
+                    <input type="text" id="address">
+                </div>
+                <!-- Click gửi -->
+                    <input type="submit" class="btn btn-info">
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <!-- <footer>
+            <div class="container-fluid footer">
+                <img src="images/logo.png" alt="footer logo">
+                <address>
+                    <ul class="add__list">
+                        <li>Copyright 2020 © by GIA PHẢ VIỆT</li>
+                        <li>Email : info@giaphaviet.vn</li>
+                        <li>Website : www.giaphaviet.vn</li>
+                        <li>Điện thoại : 0945.912.618</li>
+                    </ul>
+                </address>
+            </div>
+        </footer> -->
+    </body>
+    </html>

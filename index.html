@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="images/logo.png">
-    <title>Giaphaviet</title>
+    <title>Giaphaviet.com</title>
     <!-- bs4 link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -45,18 +45,39 @@
                     <li><a href="index.html">Trang chủ</a></li>
                     <li>
                         <a href="hotoc.html">Dòng tộc</a>
-                        <ul class="sub-menu">
-                            <li><a href="">Nguyễn Văn linh</a></li>
-                            <li><a href="">Nguyễn Văn Lam</a></li>
-                            <li><a href="">Nguyễn Văn lâm</a></li>
-                            <li><a href="">Nguyễn Văn lan</a></li>
-                            <li><a href="">Nguyễn Văn luyện</a></li>
-                        </ul>
+                            <span class="sub-menu">
+                                <ul class="list__menu">
+                                    <li class="sub-item" id="nguyen">
+                                        <a href="">Họ Nguyễn</a>
+                                        <ul class="sub-menu__child">
+                                            <li class="sub-menu__child-item"><a href="#">Nguyễn Linh Thộn</a></li>
+                                            <li class="sub-menu__child-item"><a href="#">Nguyễn Văn Tràng</a></li>
+                                            <li class="sub-menu__child-item"><a href="#">Nguyễn Thị Hồng</a></li>
+                                            <li class="sub-menu__child-item"><a href="#">nguyễn Nguyên</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-item"><a href="">Họ Trần</a></li>
+                                    <li class="sub-item"><a href="">họ Phạm</a></li>
+                                    <li class="sub-item"><a href="">Họ Nhữ</a></li>
+                                    <li class="sub-item"><a href="">Họ Nguyên</a></li>
+                                </ul>
+                            </span>
                     </li>
                     <li><a href="#phaky">Phả ký</a></li>
                     <li><a href="#phaDo">Phả đồ</a></li>
                     <li>
                         Đăng nhập
+                        
+                        <span class="sub-menu">
+                            <div class="login-create__box">
+                                <img src="images/member.png" alt="" />
+                                <input type="text" placeholder="Tên đăng nhập">
+                                <input type="password" placeholder="Mật khẩu" required>
+                                <a href="">Quên mật khẩu</a>
+                                <button>Đăng nhập</button>
+                                <a href="create.html">Đăng kí</a>
+                            </div>
+                        </span>
                     </li>
                 </ul>
                 <img src="images/logo-menu-right.png" alt="">
@@ -82,59 +103,59 @@
 
                 <div class="list-phaDo">
                     <div class="item-phaDo">
-                        <a class="parent" href="">TP. Hà Nội (5)</a>
+                        <a class="parent" href="">TP. Hà Nội (4)</a>
                         <ul>
                             <li>
                                 <h3 class="reset-heading">
                                     <a href="">
-                                        Nguyễn (5)
+                                        Nguyễn (4)
                                     </a>
                                 </h3>
                             </li>
                         </ul>
                     </div>
                     <div class="item-phaDo">
-                        <a class="parent" href="">Thừa Thiên Huế (2)</a>
-                        <ul>
+                        <a class="parent" href="">Thừa Thiên Huế (0)</a>
+                        <!-- <ul>
                             <li>
                                 <h3 class="reset-heading">
                                     <a href="">
-                                        Lê (1)
+                                        Lê (0)
                                     </a>
                                 </h3>
                             </li>
                             <li>
                                 <h3 class="reset-heading">
                                     <a href="">
-                                        Trần (1)
+                                        Trần (0)
                                     </a>
                                 </h3>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="item-phaDo">
-                        <a class="parent" href="">Ninh Bình (1)</a>
-                        <ul>
+                        <a class="parent" href="">Ninh Bình (0)</a>
+                        <!-- <ul>
                             <li>
                                 <h3 class="reset-heading">
                                     <a href="">
-                                        Nguyễn (1)
+                                        Nguyễn (0)
                                     </a>
                                 </h3>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="item-phaDo">
-                        <a class="parent" href="">Nghệ An (1)</a>
-                        <ul>
+                        <a class="parent" href="">Nghệ An (0)</a>
+                        <!-- <ul>
                             <li>
                                 <h3 class="reset-heading">
                                     <a href="">
-                                        Tô (1)
+                                        Tô (0)
                                     </a>
                                 </h3>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="item-phaDo">
                         <a class="parent" href="">Hà Giang (0)</a>
@@ -228,49 +249,69 @@
             <div class="box-phaKy">
                 <h2 class="pha_title" id="phaky">Phả ký</h2>
                 <div class="phaKy__list">
-                    <div class="item-phaKy">
+                    <div class="item-phaKy" id="Le">
+                        <h3 class="reset-heading">
+                            <span>Họ<br>Lê</span>
+                        </h3>
+                    </div>
+                    <div class="item-phaKy" id="Nhu">
                                 <h3 class="reset-heading">
-                                    <a class="item-phaky" href="">
-                                        <span>Họ<br>Lê</span>
-                                    </a>
+                                        <span>Họ<br>Nhữ</span>
                                 </h3>
                     </div>
-                    <div class="item-phaKy">
+                    <div class="item-phaKy" id="Tran">
                                 <h3 class="reset-heading">
-                                    <a class="item-phaky" href="">
-                                        <span>Họ<br>Nguyễn</span>
-                                    </a>
-                                </h3>
-                    </div>
-                    <div class="item-phaKy">
-                                <h3 class="reset-heading">
-                                    <a class="item-phaky" href="">
                                         <span>Họ<br>Trần</span>
-                                    </a>
                                 </h3>
                     </div>
-                    <div class="item-phaKy">
+                    <div class="item-phaKy" id="Pham">
                                 <h3 class="reset-heading">
-                                    <a class="item-phaky" href="">
-                                        <span>Họ<br>Nguyễn</span>
-                                    </a>
-                                </h3>
-                    </div>
-                    <div class="item-phaKy">
-                                <h3 class="reset-heading">
-                                    <a class="item-phaky" href="">
-                                        <span>Họ<br>Tô</span>
-                                    </a>
-                                </h3>
-                    </div>
-                    <div class="item-phaKy">
-                                <h3 class="reset-heading">
-                                    <a class="item-phaky" href="">
-                                        <span>Họ<br>Nguyễn</span>
-                                    </a>
+                                        <span>Họ<br>Phạm</span>
                                 </h3>
                     </div>
                 </div>
+                <!-- Lê -->
+                <div class="container-fluid Le">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nam impedit voluptatibus iste hic est eius odit mollitia officiis quam ducimus ea id sed delectus, commodi rem eos, in officia?</p>
+                </div>
+                <!-- Nhữ -->
+                <div class="container-fluid Nhu">
+                    <p class="Nhu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nam impedit voluptatibus iste hic est eius odit
+                        mollitia officiis quam ducimus ea id sed delectus, commodi rem eos, in officia?</p>
+                </div>
+                <!-- Trần -->
+                <div class="container-fluid Tran">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nam impedit voluptatibus iste hic est eius odit
+                        mollitia officiis quam ducimus ea id sed delectus, commodi rem eos, in officia?</p>
+                </div>
+                <!-- Phạm -->
+                <div class="container-fluid Pham">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nam impedit voluptatibus iste hic est eius odit
+                        mollitia officiis quam ducimus ea id sed delectus, commodi rem eos, in officia?</p>
+                </div>
+                <div class="phaKy__list">
+                    <div class="item-phaKy" id="To">
+                        <h3 class="reset-heading">
+                                <span>Họ<br>Tô</span>
+                        </h3>
+                    </div>
+                    <div class="item-phaKy" id="Nguyen">
+                        <h3 class="reset-heading">
+                                <span>Họ<br>Nguyễn</span>
+                        </h3>
+                    </div>
+                </div>
+                <!-- To -->
+                <div class="container-fluid To">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nam impedit voluptatibus iste hic est eius odit
+                        mollitia officiis quam ducimus ea id sed delectus, commodi rem eos, in officia?</p>
+                </div>
+                <!-- Nguyễn -->
+                <div class="container-fluid Nguyen">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nam impedit voluptatibus iste hic est eius odit
+                        mollitia officiis quam ducimus ea id sed delectus, commodi rem eos, in officia?</p>
+                </div>
+                
             </div>
         </div>
     </main>
@@ -288,5 +329,41 @@
             </address>
         </div>
     </footer> -->
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $("#Le").click(function () {
+            $(".Le").toggle("1000");
+            $(".Nhu").hide("1000");
+            $(".Tran").hide("1000");
+            $(".Pham").hide("1000");
+        });
+        $("#Nhu").click(function () {
+            $(".Le").hide("1000");
+            $(".Nhu").toggle("1000");
+            $(".Tran").hide("1000");
+            $(".Pham").hide("1000");
+            });
+            $("#Tran").click(function () {
+            $(".Le").hide("1000");
+            $(".Nhu").hide("1000");
+            $(".Tran").toggle("1000");
+            $(".Pham").hide("1000");
+                });
+                $("#Pham").click(function () {
+            $(".Le").hide("1000");
+            $(".Nhu").hide("1000");
+            $(".Tran").hide("1000");
+            $(".Pham").toggle("1000");
+            });
+            $("#To").click(function () {
+                    $(".Nguyen").hide("1000");
+                    $(".To").toggle("1000");
+                });
+                $("#Nguyen").click(function () {
+            $(".To").hide("1000");
+            $(".Nguyen").toggle("1000");
+            });
+    </script>
 </body>
 </html>

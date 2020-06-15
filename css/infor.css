@@ -1,0 +1,17 @@
+.bread-box p a {
+    color: red
+}
+.container {
+    margin-top: 20px;
+}
+.item {
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.item::before {
+    content: url('/images/create__before.png');
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -80px;
+}

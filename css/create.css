@@ -1,0 +1,36 @@
+.container {
+    margin-top: 15px;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+h1::before {
+    content: url(../images/create__before.png);
+    
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -9%
+}
+form {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form div {
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    align-items: center;
+}
+form div label {
+    padding-top: 10px;
+}
+form div input {
+    padding-left: 5px;
+}
+form button {
+    margin: 0px auto;
+}

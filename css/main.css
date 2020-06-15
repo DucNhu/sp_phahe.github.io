@@ -76,16 +76,27 @@ main .container {
     row-gap: 20px;
     padding: 50px 0px 20px 0px;
     border: 0.5px solid gold;
-    margin-top: -25px;
-    height: 500px;
+    margin-top: 25px;
+    height: auto;
+    margin-bottom: 50px;
 }
- 
+.box-phaKy .phaKy__list::before {
+    content: url('../images/create__before.png');
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 100px;
+}
+ .box-phaKy .container-fluid {
+    width: 100% !important;
+    display: none;
+ }
 .box-phaKy .phaKy__list .item-phaKy {
     height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     background:center/90% no-repeat url('../images/bg-item.png');
+    cursor: pointer;
 }
 .reset-heading a {
     color: black
